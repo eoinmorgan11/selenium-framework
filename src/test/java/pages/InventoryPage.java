@@ -28,10 +28,10 @@ public class InventoryPage extends BasePage {
 	private final By btn_CartPage = By.xpath("//*[@id=\"shopping_cart_container\"]/a/span");
 	private final By txt_FirstProductName = By.xpath("(//div[@data-test='inventory-item-name'])[1]");
 	private final By txt_FirstProductPrice = By.xpath("(//div[@data-test='inventory-item-price'])[1]");
-	private final By link_X = By.xpath("//a[normalize-space()='Twitter']");
+	private final By link_X = By.xpath("//a[normalize-space()='X']");
 	private final By link_Facebook = By.xpath("//a[normalize-space()='Facebook']");
 
-	// 3) Methods actions
+	// 3) Methods actions 
 	public boolean actualResult() {
 		return isDisplayed(txt_Products);
 	}
