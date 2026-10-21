@@ -76,15 +76,15 @@ public class InventoryPage extends BasePage {
 	}
 
 	public String verifyAddToCart() {
-		return driver.findElement(btn_AddToCart).getText();
+		return getText(btn_AddToCart);
 	}
 
 	public String verifyAddToCartNumber() {
-		return driver.findElement(icon_AddToCartNumber).getText();
+		return getText(icon_AddToCartNumber);
 	}
 
 	public String verifyRemoveCart() {
-		return driver.findElement(btn_RemoveCart).getText();
+		return getText(btn_RemoveCart);
 	}
 
 	public void ClickRemoveCart() {
