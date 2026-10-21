@@ -28,10 +28,10 @@ public class InventoryPage extends BasePage {
 	private final By btn_CartPage = By.xpath("//*[@id=\"shopping_cart_container\"]/a/span");
 	private final By txt_FirstProductName = By.xpath("(//div[@data-test='inventory-item-name'])[1]");
 	private final By txt_FirstProductPrice = By.xpath("(//div[@data-test='inventory-item-price'])[1]");
-	private final By link_X = By.xpath("//a[normalize-space()='Twitter']");
+	private final By link_X = By.xpath("//a[normalize-space()='X']");
 	private final By link_Facebook = By.xpath("//a[normalize-space()='Facebook']");
 
-	// 3) Methods actions
+	// 3) Methods actions 
 	public boolean actualResult() {
 		return isDisplayed(txt_Products);
 	}
@@ -45,7 +45,7 @@ public class InventoryPage extends BasePage {
 	}
 
 	public void clickSortLowToHighSelect() { // Create Select class and pass webelement
-		WebElement dropdown = driver.findElement(btn_Sort);
+		WebElement dropdown = waitVisibility(btn_Sort);
 		Select select = new Select(dropdown);
 		select.selectByVisibleText("Price (low to high)");
 	}
@@ -76,15 +76,15 @@ public class InventoryPage extends BasePage {
 	}
 
 	public String verifyAddToCart() {
-		return driver.findElement(btn_AddToCart).getText();
+		return getText(btn_AddToCart);
 	}
 
 	public String verifyAddToCartNumber() {
-		return driver.findElement(icon_AddToCartNumber).getText();
+		return getText(icon_AddToCartNumber);
 	}
 
 	public String verifyRemoveCart() {
-		return driver.findElement(btn_RemoveCart).getText();
+		return getText(btn_RemoveCart);
 	}
 
 	public void ClickRemoveCart() {
