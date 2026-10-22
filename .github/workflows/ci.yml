@@ -20,6 +20,7 @@ jobs:
       - name: Run Regression Tests
         run: mvn test -Dremote=true -DsuiteXmlFile=regression_test.xml
       - name: Upload Reports and Logs
+      if: always()
         uses: actions/upload-artifact@v4
         with:
           name: regression-results
@@ -40,6 +41,7 @@ jobs:
       - name: Run Parallel Tests
         run: mvn test -Dremote=true -DsuiteXmlFile=parallel_test.xml
       - name: Upload Reports and Logs
+      if: always()
         uses: actions/upload-artifact@v4
         with:
           name: parallel-results
