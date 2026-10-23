@@ -66,7 +66,7 @@ public class InventoryPage extends BasePage {
 	}
 
 	public void clickSortHighToLowSelect() { // Create Select class and pass webelement
-		WebElement dropdown = driver.findElement(btn_Sort);
+		WebElement dropdown = waitVisibility(btn_Sort);
 		Select select = new Select(dropdown);
 		select.selectByVisibleText("Price (high to low)");
 	}

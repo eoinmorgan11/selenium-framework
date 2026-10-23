@@ -1,3 +1,4 @@
+Practice line from branch B
 #Practice line from branch A
 # Sauce Demo Test Automation Framework by AK1187
 
