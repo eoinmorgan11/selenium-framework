@@ -134,3 +134,4 @@ Reports and logs are uploaded as artifacts and can be downloaded from the **Acti
 After test execution, reports are generated in:
 - `reports/ExtentReport.html` — HTML test report
 - `logs/framework.log` — execution log
+stash test
