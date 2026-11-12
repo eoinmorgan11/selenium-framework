@@ -13,7 +13,7 @@ A Selenium-based test automation framework built with TestNG, Java, and Maven. I
 | Selenium 4 | UI test automation |
 | TestNG | Test framework |
 | Maven | Build & dependency management |
-| WebDriverManager | Automatic driver management |
+| WebDriverManager | Automatic driver management |  
 | ExtentReports | HTML test reporting |
 | Log4j | Logging |
 | GitHub Actions | CI/CD pipeline |
