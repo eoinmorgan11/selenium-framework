@@ -1,4 +1,4 @@
-# removed the first two lines
+# Hi, this is my first github repository 
 # Sauce Demo Test Automation Framework by AK1187
 
 A Selenium-based test automation framework built with TestNG, Java, and Maven. Includes data-driven testing, parallel execution, and CI/CD integration via GitHub Actions.
